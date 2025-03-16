@@ -17,7 +17,7 @@ namespace Culture.Controllers
         public IActionResult HelloWorld()
         {
             var message = _localizer["HelloWorldMessage"];
-            return Ok(new { message });
+            return Ok(new { message.Value });
         }
     }
 }
